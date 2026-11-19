@@ -14,8 +14,8 @@ This is the same board I used for my LED Blink lab. [Hardware photo](evidence/ph
 ## Setup
 
 1. In Arduino IDE, select **AI Thinker ESP32-CAM** and the serial port for your board.
-2. Open **File → Examples → ESP32 → Camera → CameraWebServer**. Use the complete example from your installed ESP32 package so the sketch and its companion files stay together.
-3. In `board_config.h`, enable `CAMERA_MODEL_AI_THINKER` and comment out `CAMERA_MODEL_ESP_EYE` if it is active. Keep only one camera model enabled. This setting selects the pin mapping for the board's camera.
+2. Open [`CameraWebServer.ino`](sketches/CameraWebServer/CameraWebServer.ino) in Arduino IDE. Keep it in the [`CameraWebServer`](sketches/CameraWebServer/) folder with its companion files.
+3. The included `board_config.h` already selects `CAMERA_MODEL_AI_THINKER`, which sets the pin mapping for this board.
 4. In `CameraWebServer.ino`, replace the default `ssid` and `password` placeholders in your local copy.
 5. Upload the sketch and open Serial Monitor at **115200 baud**. After the board boots, look for `WiFi connected` and `Camera Ready!` followed by the camera's local address. If you opened Serial Monitor after boot, reset the board to see the startup messages again.
 6. Open the reported HTTP address in a browser on the same network and select **Start Stream**.
