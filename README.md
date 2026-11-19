@@ -1,5 +1,7 @@
 # ESP32-CAM Camera Web Server
 
+## Overview
+
 I used an AI Thinker ESP32-CAM to stream video to a browser over my local Wi-Fi. The board runs Espressif's Arduino `CameraWebServer` example, which serves the camera controls and video feed from the ESP32 itself.
 
 ## Hardware and tools
@@ -22,7 +24,7 @@ This is the same board I used for my LED Blink lab. [Hardware photo](evidence/ph
 
 Keep real Wi-Fi credentials in your local copy of the sketch. I ran the camera on my local network.
 
-## What I verified
+## Testing and results
 
 | Check | Evidence |
 | --- | --- |
@@ -36,3 +38,7 @@ The browser also showed an **LED Intensity** slider. A follow-up test would be t
 
 - [Espressif's Arduino CameraWebServer example](https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer)
 - [Last Minute Engineers ESP32-CAM guide](https://lastminuteengineers.com/getting-started-with-esp32-cam/), which I followed for this lab
+
+## License
+
+The Espressif source files retain their upstream notices. The [Apache 2.0 license text](sketches/CameraWebServer/LICENSE-APACHE-2.0.txt) is included alongside the sketch.
